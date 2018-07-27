@@ -7,8 +7,7 @@
 // mobile menu start
 // ===================
 .menu_block {
-    width: 100%;
-    float: left;
+    @include float;
     transform: translateX(-100%);
     transition: all .3s ease-in-out;
     transform-style: preserve-3d;
@@ -37,13 +36,13 @@
             display: block;
             text-decoration: none;
             font-family: "Lato", sans-serif;
-            border-bottom: 1px solid #f34849;;
+            border-bottom: 1px solid $red-color;
             transition: padding 0.3s;
             color: #fff;
             &:hover, 
             &:focus, 
             &:active {
-                color: #f34849;
+                color: $red-color;
             }
             &.active {
                 color: yellowgreen;
@@ -236,10 +235,9 @@
 // menu recipes start
 // ===================
 section.menu-container {
-    width: 100%;
+    @include float;
     border-top: 4px solid #f34949;
     position: relative;
-    float: left;
     .wrapper {
         .menu-container__box {
             margin-top: 100px;
@@ -523,8 +521,7 @@ a.example-image-link {
 // button btt start
 // ///////////////////
 section.back-to-top {
-    width: 100%;
-    float: left;
+    @include float;
     padding: 10px;
     display: flex;
     justify-content: flex-end;

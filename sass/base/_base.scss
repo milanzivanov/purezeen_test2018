@@ -40,19 +40,14 @@ html, body {
 }
 
 .wrapper {
-    max-width: 1200px;
+    max-width: 1167px;
     margin: 0 auto;
 }
 
-// @media (min-width: 600px) {
-//     .wrapper {
-//         max-width: 1200px;
-//     }
-// }
 
 // variables
 $color-border: #f2f2f2;
-$blue-color: #074a86;
+$red-color: $red-color;
 
 // mixin
 @mixin float {

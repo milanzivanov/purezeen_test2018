@@ -74,12 +74,13 @@
     }
 }
 
-@media (min-width: 990px) {
+@media (min-width: 989px) {
     .footer {
         .wrapper {
             .footer-container {
                 .f-box {
                     flex: 1 1 50%;
+                    justify-content: flex-start;
                 }
             }
         }
