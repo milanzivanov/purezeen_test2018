@@ -1,0 +1,102 @@
+// ///// footer    */
+
+
+// This applies from 0px to 600px
+.footer {
+    @include float;
+    background-color: #3b3b3b;
+    padding: 70px 10px;
+    font-family: "aleo-light", sans-serif;
+    .wrapper {
+        .footer-container {
+            display: flex;
+            flex-flow: row wrap;
+            .f-box {
+                flex: 1 1 100%;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                .adress {
+                    color: #fff;
+                    .title {
+                        font-weight: bold;
+                    }
+
+                    li {
+                        padding: 0 0 10px 0;
+                        a {
+                            color: #818181;
+                            display: block;
+                            text-decoration: none;
+                        }
+                    }
+                    .phone {
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+
+                //
+                nav {
+                    ol {
+                        li {
+                            a {
+                                display: inline-block;
+                                text-decoration: none;
+                                padding-bottom: 10px;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+
+                //
+                .copyrights {
+                    color: #818181;
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        padding: 0 0 20px 0;
+                    }
+                    p {
+                        letter-spacing: 1px;
+                        padding: 5px 0;
+                        a {
+                            text-decoration: none;
+                            color: #fff;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media (min-width: 990px) {
+    .footer {
+        .wrapper {
+            .footer-container {
+                .f-box {
+                    flex: 1 1 50%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1366px) {
+    .footer {
+        .wrapper {
+            .footer-container {
+                .f-box {
+                    flex: 1 1 25%;
+                }
+            }
+        }
+    }
+}
+
+
+

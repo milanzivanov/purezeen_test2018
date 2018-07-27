@@ -1,0 +1,19 @@
+{
+  "name": "purezeen-task",
+  "version": "1.0.0",
+  "description": "task for purezeen",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "mz",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  },
+  "dependencies": {
+    "flexslider": "^2.7.1",
+    "jquery": "^2.2.4",
+    "lightbox2": "^2.10.0"
+  }
+}
