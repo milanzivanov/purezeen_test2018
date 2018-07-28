@@ -10,7 +10,7 @@ $(document).ready(function () {
 
         $(this).addClass('liked');
         var child = $(this).parent().find(".counterNum");
-        // var text = child.text();
+        var text = child.text();
         var num = parseInt(child.text());
         child.text(num+1);
 
