@@ -136,7 +136,6 @@ li.flex-active-slide {
     height: 20px;
     position: absolute;
     top: -30px;
-    text-align: right;
     overflow: hidden; }
     #secondary-slider .flex-control-nav a {
       text-indent: 9999px; }
@@ -182,11 +181,15 @@ ul.rating {
 
 @media (min-width: 989px) {
   .flexslider-container {
-    display: block; } }
+    display: block; }
+  #secondary-slider .flex-control-nav {
+    text-align: right; } }
 
 @media (min-width: 1366px) {
   .flexslider-container {
-    display: block; } }
+    display: block; }
+  #secondary-slider .flex-control-nav {
+    text-align: right; } }
 
 /* The Modal (background) */
 .modal {

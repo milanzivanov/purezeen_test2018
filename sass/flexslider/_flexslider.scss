@@ -135,7 +135,6 @@ li.flex-active-slide {
         height: 20px;
         position: absolute;
         top: -30px;
-        text-align: right;
         overflow: hidden;
 
         a {
@@ -210,6 +209,9 @@ ul.rating {
     .flexslider-container {
         display: block;;
     }
+    #secondary-slider .flex-control-nav {
+        text-align: right;
+    }
 }
 
 ///////////////
@@ -218,5 +220,8 @@ ul.rating {
 @media (min-width: 1366px) {
     .flexslider-container {
         display: block;;
+    }
+    #secondary-slider .flex-control-nav {
+        text-align: right;
     }
 }
