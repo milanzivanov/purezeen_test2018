@@ -22,7 +22,7 @@ html, body {
   font-style: normal; }
 
 @font-face {
-  font-family: aleo-regular;
+  font-family: 'aleo-regular';
   src: url(../../fonts/aleo-regular.eot);
   src: url(../../fonts/aleo-regular.eot?#iefix) format("embedded-opentype"), url(../../fonts/aleo-regular.woff) format("woff"), url(../../fonts/aleo-regular.ttf) format("truetype"), url(../../fonts/aleo-regular.svg#aleo-regular) format("svg");
   font-weight: 400;
@@ -43,6 +43,9 @@ html, body {
     min-height: 500px; }
   .flexslider-container .flex-control-nav {
     bottom: 10px; }
+
+.flex-direction-nav a:before {
+  color: white; }
 
 .flexslider {
   background-color: transparent; }
@@ -82,7 +85,7 @@ li.flex-active-slide {
     text-align: center; }
   .flexslider--text .text-subtitle {
     color: #fff;
-    font-family: aleo-regular, sans-serif;
+    font-family: 'aleo-regular', sans-serif;
     font-size: 16px;
     position: relative;
     display: flex;
@@ -94,7 +97,7 @@ li.flex-active-slide {
     padding: 5px; }
     .flexslider--text .text-subtitle h4 {
       color: #fff;
-      font-family: aleo-regular, sans-serif;
+      font-family: 'aleo-regular', sans-serif;
       font-size: 16px;
       padding: 0;
       font-weight: 400; }
@@ -112,13 +115,13 @@ li.flex-active-slide {
       background-color: #fff; }
 
 .slider-secondery {
-  position: relative;
   float: left;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
 
 #secondary-slider {
-  width: 100%;
   float: left;
+  width: 100%;
   border-bottom: none; }
   #secondary-slider .flex-direction-nav a {
     top: 40%; }
@@ -317,11 +320,11 @@ td, th {
         display: block;
         text-decoration: none;
         font-family: "Lato", sans-serif;
-        border-bottom: 1px solid $red-color;
+        border-bottom: 1px solid #f34949;
         transition: padding 0.3s;
         color: #fff; }
         .menu_block .wrapper ul li a:hover, .menu_block .wrapper ul li a:focus, .menu_block .wrapper ul li a:active {
-          color: $red-color; }
+          color: #f34949; }
         .menu_block .wrapper ul li a.active {
           color: yellowgreen;
           background-color: rgba(0, 0, 0, 0.1); }
@@ -515,6 +518,7 @@ section.menu-container {
   .modal-recipes a {
     width: 100%;
     display: flex;
+    cursor: pointer;
     justify-content: center;
     position: relative;
     align-items: center;
@@ -523,7 +527,7 @@ section.menu-container {
     padding: 10px 25px;
     border: 1px solid #d7d5d5;
     color: #b7b7b7;
-    font-family: aleo-regular, arial;
+    font-family: 'aleo-regular', sans-serif;
     font-size: 15px;
     letter-spacing: 1px;
     transition: all 0.3s ease-in-out;

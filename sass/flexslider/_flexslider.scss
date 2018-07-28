@@ -1,5 +1,6 @@
-// slider
-
+///////////////////
+// slider primary
+///////////////////
 .flexslider-container {
     display: none;
     @include float;
@@ -13,6 +14,10 @@
     .flex-control-nav {
         bottom: 10px;
     }
+}
+
+.flex-direction-nav a:before {
+    color: rgb(255, 255, 255);
 }
 
 .flexslider {
@@ -61,7 +66,7 @@ li.flex-active-slide {
 
     .text-subtitle {
         color: #fff;
-        font-family: aleo-regular, sans-serif;
+        font-family: 'aleo-regular', sans-serif;
         font-size: 16px;
         position: relative;
         display: flex;
@@ -73,7 +78,7 @@ li.flex-active-slide {
         padding: 5px;
         h4 {
             color: #fff;
-            font-family: aleo-regular, sans-serif;
+            font-family: 'aleo-regular', sans-serif;
             font-size: 16px;
 
             padding: 0;
@@ -96,7 +101,9 @@ li.flex-active-slide {
     }
 }
 
-// flexslider 2
+////////////////////
+// slider secondery
+////////////////////
 .slider-secondery {
     @include float;
     position: relative;
@@ -142,7 +149,9 @@ li.flex-active-slide {
     max-height: 150px;
 }
 
+///////////////////////////////
 // flexslider 2 caption text
+///////////////////////////////
 .caption-content {
     display: flex;
     width: 100%;
@@ -189,16 +198,23 @@ ul.rating {
     
 }
 
+///////////////
 // responsive 
+///////////////
 
+
+///////////////
 // tablet
+///////////////
 @media (min-width: 989px) {
     .flexslider-container {
         display: block;;
     }
 }
 
+///////////////
 // desktop
+///////////////
 @media (min-width: 1366px) {
     .flexslider-container {
         display: block;;

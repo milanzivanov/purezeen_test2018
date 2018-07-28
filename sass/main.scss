@@ -152,9 +152,9 @@
                                padding-bottom: 10px;
                                padding-top: 10px;
                                &:hover {
-                                   color: #f34949;
-                                   border-bottom: 2px solid #f34949;
-                                   border-top: 2px solid #f34949;
+                                   color: $red-color;
+                                   border-bottom: 2px solid $red-color;
+                                   border-top: 2px solid $red-color;
                                }
                            }
                        }
@@ -236,7 +236,7 @@
 // ===================
 section.menu-container {
     @include float;
-    border-top: 4px solid #f34949;
+    border-top: 4px solid $red-color;
     position: relative;
     .wrapper {
         .menu-container__box {
@@ -256,7 +256,7 @@ section.menu-container {
         /*Chrome,Safari*/
         -webkit-clip-path: polygon(150px 0px, 150px 75px, 75px 60px, 0px 75px, 0px 0px);
         clip-path: polygon(150px 0px, 150px 75px, 75px 60px, 0px 75px, 0px 0px);
-        background-color: #f34949;
+        background-color: $red-color;
         position: absolute;
         text-align: center;
         font-size: 25px;
@@ -301,6 +301,7 @@ section.menu-container {
     a {
         width: 100%;
         display: flex;
+        cursor: pointer;
         justify-content: center;
         position: relative;
         align-items: center;
@@ -309,15 +310,15 @@ section.menu-container {
         padding: 10px 25px;
         border: 1px solid #d7d5d5;
         color: #b7b7b7;
-        font-family: aleo-regular, arial;
+        font-family: 'aleo-regular', sans-serif;
         font-size: 15px;
         letter-spacing: 1px;
         transition: all 0.3s ease-in-out;
-        background-color: #f34949;
+        background-color: $red-color;
         color: #fff;
         &:hover {
             background-color: #fff;
-            color: #f34949,
+            color: $red-color;
         }
     }
 }
@@ -332,7 +333,6 @@ section.menu-container {
 .about-container {
     @include float;
 }
-
 
 .about-body {
     display: flex;
@@ -391,7 +391,6 @@ section.menu-container {
         }
     }
 }
-
 // ===================
 // about section end
 // ===================
@@ -410,7 +409,9 @@ section.menu-container {
 
 }
 
-// gallery with flexbox start ===========
+// ==========================
+// gallery with flexbox start
+// ==========================
 .gallery-box-left {
     flex: 100%;
     flex-wrap: wrap;
@@ -424,16 +425,19 @@ section.menu-container {
     flex-wrap: wrap;
     justify-content: center;
 }
-// gallery with flexbox end ==============
 
-// css grid mobile
+// ==========================
+// gallery with flexbox end 
+// ==========================
 
+// ==========================
+// css grid start
+// ==========================
 .grid-wrapper {
     max-width: 700px;
     margin: auto;
     display: grid;
     grid-template-columns: 50% 50%;
-    // border: 2px solid black;
     grid-gap: 0;
     background-color: #fff;
 }
@@ -451,35 +455,30 @@ a.example-image-link {
     grid-row-end: 3;
     grid-row-start: 2;
     grid-column-end: 3;
-    // border: 3px solid blue;
 }
 .a {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    // border: 3px solid red;
 }
 .b {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
-    // border: 3px solid pink;
 }
 .c {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    // border: 3px solid yellow;
 }
 .f {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    // border: 3px solid springgreen;
 }
 
 .example-image-link {
@@ -512,9 +511,8 @@ a.example-image-link {
         color: #999;
     }
 }
-
 // ===================
-// gallery end
+// css grid end
 // ===================
 
 // ///////////////////
@@ -652,7 +650,6 @@ section.back-to-top {
         grid-row-end: 2;
     }
 
-
     // gallery with flexbox
     .gallery-box-left {
         flex: 29%;
@@ -724,7 +721,7 @@ section.back-to-top {
         }
     }
 
-    // gallery desktop
+    // gallery with css grid
     .grid-wrapper {
         max-width: 1100px;
         margin: auto;
@@ -780,6 +777,5 @@ section.back-to-top {
             flex: 69%;
             justify-content: flex-start;
         }
-
 }
 

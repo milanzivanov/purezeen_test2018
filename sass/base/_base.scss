@@ -29,7 +29,7 @@ html, body {
 }
 
 @font-face {
-    font-family: aleo-regular;
+    font-family: 'aleo-regular';
     src: url(../../fonts/aleo-regular.eot);
     src: url(../../fonts/aleo-regular.eot?#iefix) format('embedded-opentype'),
          url(../../fonts/aleo-regular.woff) format('woff'),
@@ -47,7 +47,7 @@ html, body {
 
 // variables
 $color-border: #f2f2f2;
-$red-color: $red-color;
+$red-color: #f34949;
 
 // mixin
 @mixin float {
