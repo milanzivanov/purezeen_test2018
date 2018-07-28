@@ -44,12 +44,15 @@ html, body {
     margin: 0 auto;
 }
 
-
+//////////////////////////
 // variables
+//////////////////////////
 $color-border: #f2f2f2;
 $red-color: #f34949;
 
+//////////////////////////
 // mixin
+//////////////////////////
 @mixin float {
     float: left;
     width: 100%;

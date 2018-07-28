@@ -430,55 +430,12 @@ section.menu-container {
 // gallery with flexbox end 
 // ==========================
 
-// ==========================
-// css grid start
-// ==========================
-.grid-wrapper {
-    max-width: 700px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-gap: 0;
-    background-color: #fff;
-}
-
 a.example-image-link {
     display: flex;
     .example-image {
         max-width: 100%;
         height: auto;;
     }
-}
-
-.d {
-    grid-column-start: 2;
-    grid-row-end: 3;
-    grid-row-start: 2;
-    grid-column-end: 3;
-}
-.a {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-.b {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-.c {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-.f {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
 }
 
 .example-image-link {
@@ -512,7 +469,7 @@ a.example-image-link {
     }
 }
 // ===================
-// css grid end
+// gallery start
 // ===================
 
 // ///////////////////
@@ -611,45 +568,6 @@ section.back-to-top {
         }
     }
 
-    // gallery with css grid
-    .grid-wrapper {
-        max-width: 1000px;
-        margin: 0 auto;
-        grid-template-columns: 33.333% 33.333% 33.333%;
-    }
-
-    .a {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-    .b {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-    .c {
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-    .d {
-        grid-row-end: 3;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-    }
-
-    .f {
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-
     // gallery with flexbox
     .gallery-box-left {
         flex: 29%;
@@ -721,61 +639,14 @@ section.back-to-top {
         }
     }
 
-    // gallery with css grid
-    .grid-wrapper {
-        max-width: 1100px;
-        margin: auto;
-        display: grid;
-        grid-template-columns: 33.333% 33.333% 33.333%;
-        grid-gap: 0;
-        background-color: #fff;
-    }
-    
-    .a {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-    .b {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-    .c {
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-    .d {
-        grid-row-end: 3;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-    }
-    .e {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-    .f {
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
+    // gallery with flexbox
+    .gallery-box-left {
+        flex: 29%;
     }
 
-        // gallery with flexbox
-        .gallery-box-left {
-            flex: 29%;
-        }
-    
-        .gallery-box-right {
-            flex: 69%;
-            justify-content: flex-start;
-        }
+    .gallery-box-right {
+        flex: 69%;
+        justify-content: flex-start;
+    }
 }
 
