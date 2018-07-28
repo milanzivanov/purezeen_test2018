@@ -1,4 +1,4 @@
-# Starter 2018
+# Starter 2018 for purezeen test
 
 ### Install
 
@@ -8,4 +8,4 @@
 
 ### Link preview
 
-[link]()
+[link](http://moldy-foot.surge.sh/)
