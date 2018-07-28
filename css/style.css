@@ -175,15 +175,12 @@ ul.rating {
         padding-right: 5px; }
       ul.rating li a:hover {
         color: #d85a4b; }
-
-.liked {
-  color: #d85a4b; }
+    ul.rating li .liked {
+      color: #d85a4b; }
 
 @media (min-width: 989px) {
   .flexslider-container {
-    display: block; }
-  #secondary-slider .flex-control-nav {
-    text-align: right; } }
+    display: block; } }
 
 @media (min-width: 1366px) {
   .flexslider-container {
