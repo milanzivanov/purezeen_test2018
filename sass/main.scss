@@ -410,27 +410,6 @@ section.menu-container {
 }
 
 // ==========================
-// gallery with flexbox start
-// ==========================
-.gallery-box-left {
-    flex: 100%;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-}
-
-.gallery-box-right {
-    display: flex;
-    flex: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-// ==========================
-// gallery with flexbox end 
-// ==========================
-
-// ==========================
 // css grid start
 // ==========================
 .grid-wrapper {
@@ -650,16 +629,6 @@ section.back-to-top {
         grid-row-end: 2;
     }
 
-    // gallery with flexbox
-    .gallery-box-left {
-        flex: 29%;
-    }
-
-    .gallery-box-right {
-        flex: 69%;
-        justify-content: flex-start;
-    }
-
 }
 
 // ==============
@@ -767,15 +736,5 @@ section.back-to-top {
         grid-row-start: 1;
         grid-row-end: 2;
     }
-
-        // gallery with flexbox
-        .gallery-box-left {
-            flex: 29%;
-        }
-    
-        .gallery-box-right {
-            flex: 69%;
-            justify-content: flex-start;
-        }
 }
 
