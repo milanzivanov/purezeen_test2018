@@ -127,18 +127,17 @@ async function fetchUsers() {
             </p>
         </div>`;
 
-            output2 += `
-            <tr>
-                <th>Recipe name</th>
-                <th>Info</th>
-                <th>Price</th>
-            </tr>
-            <tr>
-                <td>${info_recipe.name}.</td>
-                <td>${info_recipe.info}</td>
-                <td>&#36;${info_recipe.price}</td>
-            </tr>
-        `;
+        output2 += `
+        <tr>
+            <th>Recipe name</th>
+            <th>Info</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>${info_recipe.name}.</td>
+            <td>${info_recipe.info}</td>
+            <td>&#36;${info_recipe.price}</td>
+        </tr>`;
 
     }
 
