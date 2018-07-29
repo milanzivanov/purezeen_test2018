@@ -96,3 +96,35 @@ $(window).load(function() {
   }());
 
 
+// Asunc / Await / Fetch example 2
+async function fetchUsers() {
+    const res = await fetch('../db/info_recipes.json');
+    const data = await res.json();
+    // console.log(data);
+
+    let output = '';
+    let box_recipes = document.querySelector(".menu-container__box");
+
+    for (let d of data) {
+
+        output += `
+        <div class="box--item">
+        <div class="recipe_item">
+            <h3 class="recipe_name">
+                ${d.name}.
+            </h3>
+            <span class="recipe_separator"></span>
+            <h4 class="recipe_price">${d.username}</h4>
+            </div>
+            <p class="recipe_desc">
+                ${d.email}
+            </p>
+        </div>`;
+        
+    }
+
+    box_recipes.innerHTML = output;
+
+}
+
+fetchUsers();
