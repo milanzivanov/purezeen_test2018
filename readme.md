@@ -6,6 +6,11 @@
 * npm i
 * I use to open exstension live server from vscode
 
+### Bonus branch fetchDataBranch
+* fetching data from json file
+* sectione recipes
+* section modal
+
 ### Link preview
 
 [link](http://purezeen-task.surge.sh/)
