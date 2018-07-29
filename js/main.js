@@ -52,7 +52,8 @@ $(window).load(function() {
     $('#main-slider').flexslider({
         animation: "slide",
         animationLoop: false,
-        useCSS : "false"
+        useCSS : "false",
+        slideshow: true
     });
 
     $('#secondary-slider').flexslider({
@@ -62,7 +63,7 @@ $(window).load(function() {
         itemMargin: 5,
         minItems: 1,
         maxItems: 4,
-        slideshow: false
+        slideshow: true
 
     });
 
