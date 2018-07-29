@@ -16,6 +16,13 @@
     }
 }
 
+// stop blinking text caption in flexslider
+// in the flexslider.css file commented this line
+.flexslider .slides > li {
+    display: none;
+    // webkit-backface-visibility: hidden;
+  }
+
 .flex-direction-nav a:before {
     color: rgb(255, 255, 255);
 }

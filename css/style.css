@@ -44,6 +44,9 @@ html, body {
   .flexslider-container .flex-control-nav {
     bottom: 10px; }
 
+.flexslider .slides > li {
+  display: none; }
+
 .flex-direction-nav a:before {
   color: white; }
 
