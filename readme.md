@@ -8,7 +8,7 @@
 
 ### Bonus branch fetchDataBranch
 * fetching data from json file
-* sectione recipes
+* section recipes
 * section modal
 
 ### Link preview
