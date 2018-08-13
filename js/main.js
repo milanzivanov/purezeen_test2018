@@ -5,7 +5,7 @@ $(document).ready(function () {
       $(".menu_block, .botton").toggleClass("active");
     });
 
-    //desktop nav
+    // like ranking
     $('.like').on("click", function () {
 
         $(this).addClass('liked');
