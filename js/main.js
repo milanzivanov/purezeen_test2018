@@ -5,7 +5,7 @@ $(document).ready(function () {
       $(".menu_block, .botton").toggleClass("active");
     });
 
-    //desktop nav
+    // like ranking
     $('.like').on("click", function () {
 
         $(this).addClass('liked');
@@ -107,7 +107,7 @@ async function fetchUsers() {
     console.log(data);
 
     let output = '';
-    let output2 = '';
+    let outputModal = '';
     let box_recipes = document.querySelector(".menu-container__box");
     let modal_rec = document.querySelector(".table");
 
@@ -127,7 +127,7 @@ async function fetchUsers() {
             </p>
         </div>`;
 
-        output2 += `
+        outputModal += `
         <tr>
             <th>Recipe name</th>
             <th>Info</th>
@@ -142,7 +142,7 @@ async function fetchUsers() {
     }
 
     box_recipes.innerHTML = output;
-    modal_rec.innerHTML = output2;
+    modal_rec.innerHTML = outputModal;
 
 }
 
