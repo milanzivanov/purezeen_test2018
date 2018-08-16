@@ -517,7 +517,7 @@ section.menu-container {
   justify-content: center;
   position: relative;
   align-items: center; }
-  .modal-recipes a {
+  .modal-recipes #more_items {
     width: 100%;
     display: flex;
     cursor: pointer;
@@ -535,9 +535,20 @@ section.menu-container {
     transition: all 0.3s ease-in-out;
     background-color: #f34949;
     color: #fff; }
-    .modal-recipes a:hover {
+    .modal-recipes #more_items:hover {
       background-color: #fff;
       color: #f34949; }
+    .modal-recipes #more_items:hover > i {
+      border: solid #f34949;
+      border-width: 0 3px 3px 0; }
+    .modal-recipes #more_items i {
+      border: solid #fff;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px; }
+    .modal-recipes #more_items .right {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg); }
 
 .about-container {
   float: left;
@@ -649,10 +660,20 @@ section.back-to-top {
     display: block;
     background: #d85a4b;
     width: 50px;
+    height: 50px;
     border-radius: 50px;
     padding: 10px;
     text-align: center;
-    color: #fff; }
+    color: #fff;
+    line-height: 25px; }
+    section.back-to-top a.btn-to-top i {
+      border: solid #fff;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px; }
+    section.back-to-top a.btn-to-top .up {
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg); }
 
 @media (min-width: 989px) {
   .header .wrapper .header-container .header_menu nav {
