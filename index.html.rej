@@ -1,0 +1,10 @@
+diff a/index.html b/index.html	(rejected hunks)
+@@ -12,8 +12,6 @@
+     <link rel="stylesheet" href="./node_modules/flexslider/flexslider.css">
+     <link rel="stylesheet" href="./node_modules/lightbox2/dist/css/lightbox.css">
+     <link rel="stylesheet" href="./css/style.css">
+-
+-    
+ </head>
+ <body>
+     <div id="sectionHeader" class="header">

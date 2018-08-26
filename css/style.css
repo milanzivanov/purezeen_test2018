@@ -183,9 +183,7 @@ ul.rating {
 
 @media (min-width: 989px) {
   .flexslider-container {
-    display: block; }
-  #secondary-slider .flex-control-nav {
-    text-align: right; } }
+    display: block; } }
 
 @media (min-width: 1366px) {
   .flexslider-container {
@@ -202,41 +200,43 @@ ul.rating {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   /* Enable scroll if needed */
+  overflow: hidden;
   background-color: black;
   background-color: rgba(0, 0, 0, 0.4); }
 
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto;
+  margin: 10% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  height: 65%;
+  overflow-y: auto;
+  position: relative; }
 
-/* The Close Button */
+.table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%; }
+
 .close {
   color: #aaa;
   font-size: 28px;
   font-weight: bold;
   align-self: flex-start;
   width: 28px;
-  text-align: center; }
+  text-align: center;
+  position: fixed;
+  top: 178px;
+  right: 15px; }
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #f34949;
   text-decoration: none;
   cursor: pointer; }
-
-.table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%; }
 
 td, th {
   border: 1px solid #dddddd;
@@ -520,7 +520,7 @@ section.menu-container {
   justify-content: center;
   position: relative;
   align-items: center; }
-  .modal-recipes a {
+  .modal-recipes #more_items {
     width: 100%;
     display: flex;
     cursor: pointer;
@@ -538,9 +538,20 @@ section.menu-container {
     transition: all 0.3s ease-in-out;
     background-color: #f34949;
     color: #fff; }
-    .modal-recipes a:hover {
+    .modal-recipes #more_items:hover {
       background-color: #fff;
       color: #f34949; }
+    .modal-recipes #more_items:hover > i {
+      border: solid #f34949;
+      border-width: 0 3px 3px 0; }
+    .modal-recipes #more_items i {
+      border: solid #fff;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px; }
+    .modal-recipes #more_items .right {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg); }
 
 .about-container {
   float: left;
@@ -652,10 +663,20 @@ section.back-to-top {
     display: block;
     background: #d85a4b;
     width: 50px;
+    height: 50px;
     border-radius: 50px;
     padding: 10px;
     text-align: center;
-    color: #fff; }
+    color: #fff;
+    line-height: 25px; }
+    section.back-to-top a.btn-to-top i {
+      border: solid #fff;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px; }
+    section.back-to-top a.btn-to-top .up {
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg); }
 
 @media (min-width: 989px) {
   .header .wrapper .header-container .header_menu nav {

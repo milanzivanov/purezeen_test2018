@@ -1,0 +1,90 @@
+[
+    {
+      "id": 1,
+      "name": "Sarma",
+      "info": "Kupus, mleveno meso, zacini...",
+      "price": "50",
+      "phone": "1-770-736-8031 x56442",
+      "website": "hildegard.org"
+    },
+    {
+      "id": 2,
+      "name": "burek",
+      "info": "mleveno meso, zacini...",
+      "price": "50",
+      "phone": "010-692-6593 x09125",
+      "website": "anastasia.net"
+    },
+    {
+      "id": 3,
+      "name": "Becka snicla",
+      "info": "Meso, krompir, salata",
+      "price": "50",
+      "phone": "1-463-123-4447",
+      "website": "ramiro.info"
+    },
+    {
+      "id": 4,
+      "name": "Svadbarski kupus",
+      "info": "Meso, krompir, salata",
+      "price": "55",
+      "phone": "493-170-9623 x156",
+      "website": "kale.biz"
+    },
+    {
+      "id": 5,
+      "name": "Cevapi",
+      "info": "Meso, luk, kajmak...",
+      "price": "60",
+      "phone": "(254)954-1289",
+      "website": "demarco.info"
+    },
+    {
+      "id": 6,
+      "name": "Punjena paprika",
+      "info": "Meso, krompir, kupus",
+      "price": "40",
+      "phone": "1-477-935-8478 x6430",
+      "website": "ola.org"
+    },
+    {
+      "id": 7,
+      "name": "Pita zeljanica",
+      "info": "Zelje, testo, zacini...",
+      "price": "50",
+      "phone": "210.067.6132",
+      "website": "elvis.io"
+    },
+    {
+      "id": 8,
+      "name": "Pica",
+      "info": "Meso, sir, kecap, sampinjoni...",
+      "price": "50",
+      "phone": "586.493.6943 x140",
+      "website": "jacynthe.com"
+    },
+    {
+      "id": 9,
+      "name": "Gulas",
+      "info": "Meso, krompir, salata",
+      "price": "50",
+      "phone": "(775)976-6794 x41206",
+      "website": "conrad.com"
+    },
+    {
+      "id": 10,
+      "name": "Paprikas pileci",
+      "info": "Meso, krompir, salata, pileci bataci...",
+      "price": "50",
+      "phone": "024-648-3804",
+      "website": "ambrose.net"
+    },
+    {
+      "id": 11,
+      "name": "Sef kuhinje",
+      "info": "html, css, flexbox, angular...",
+      "price": "50",
+      "phone": "024-648-3804",
+      "website": "ambrose.net"
+    }
+  ]

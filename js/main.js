@@ -52,7 +52,8 @@ $(window).load(function() {
     $('#main-slider').flexslider({
         animation: "slide",
         animationLoop: false,
-        useCSS : "false"
+        useCSS : "false",
+        slideshow: true
     });
 
     $('#secondary-slider').flexslider({
@@ -62,7 +63,7 @@ $(window).load(function() {
         itemMargin: 5,
         minItems: 1,
         maxItems: 4,
-        slideshow: false
+        slideshow: true
 
     });
 
@@ -96,3 +97,53 @@ $(window).load(function() {
   }());
 
 
+// Asunc / Await / Fetch example 2
+async function fetchUsers() {
+    // lokal
+    // const res = await fetch('../db/info_recipes.json');
+    // online
+    const res = await fetch('https://next.json-generator.com/api/json/get/EkaIUtIVS');
+    const data = await res.json();
+    console.log(data);
+
+    let output = '';
+    let outputModal = '';
+    let box_recipes = document.querySelector(".menu-container__box");
+    let modal_rec = document.querySelector(".table");
+
+    for (let info_recipe of data) {
+
+        output += `
+        <div class="box--item">
+            <div class="recipe_item">
+                <h3 class="recipe_name">
+                    ${info_recipe.name}.
+                </h3>
+                <span class="recipe_separator"></span>
+                <h4 class="recipe_price">&#36;${info_recipe.price}</h4>
+            </div>
+            <p class="recipe_desc">
+                ${info_recipe.info}
+            </p>
+        </div>`;
+
+        outputModal += `
+        <tr>
+            <th>Recipe name</th>
+            <th>Info</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>${info_recipe.name}.</td>
+            <td>${info_recipe.info}</td>
+            <td>&#36;${info_recipe.price}</td>
+        </tr>`;
+
+    }
+
+    box_recipes.innerHTML = output;
+    modal_rec.innerHTML = outputModal;
+
+}
+
+fetchUsers();
