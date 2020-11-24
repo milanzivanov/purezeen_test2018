@@ -624,7 +624,7 @@ a.example-image-link {
   display: flex; }
   a.example-image-link .example-image {
     max-width: 100%;
-    height: auto; }
+    height: 100%; }
 
 .example-image-link {
   position: relative;
